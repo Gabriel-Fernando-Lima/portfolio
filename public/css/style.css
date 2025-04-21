@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #131a29;
+    color: #fff;
+
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0a0f1b;
+}
+
+nav h1 {
+    color: #00aaff;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* introduçao */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    min-height: 80vh;
+}
+
+.introduçao h2 {
+    font-size: 48px;
+}
+
+.introduçao h3 {
+    color: #00aaff;
+    font-size: 36px;
+}
+
+.introduçao p {
+    margin: 20px 0;
+    max-width: 400px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: #00aaff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons button:hover {
+    background-color: #008fcc;
+}
+
+.foto-perfil img{
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+}
+
+/* Projetos */
+.projetos {
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.projeto-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: scale(1.05);
+}
+
+.projeto-imagem {
+    max-width: 500px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.projeto-conteudo {
+    max-width: 600px;
+    text-align: left;
+}
+
+.projeto-conteudo h3 {
+    font-size: 28px;
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+.projeto-conteudo p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.btn-saiba-mais {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #008fcc;
+}
+
+
+/* Formação */
+.formacao h2{
+    justify-content: center;
+    display: flex;
+}
+
+.formacao-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formacao-card {
+    background-color: #1e293b;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    text-align: left;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.formacao-card:hover {
+    transform: scale(1.05);
+}
+
+.projetos, .formações, .habilidades, .contato {
+    padding: 35px;
+    text-align: center;
+}
+
+/* Habilidades */
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.habilidade-item {
+    background-color: #1e1e2e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.habilidade-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+
+/*Contato */
+.contato .redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.redes-sociais a img {
+    width: 40px;
+}
+
+.contato button {
+    padding: 10px 20px;
+    border: 2px solid #00aaff;
+    background-color: transparent;
+    color: #00aaff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.contato button:hover {
+    background-color: #00aaff;
+    color: white;
+}
+
+
+/* Rodapé */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
